@@ -1,0 +1,139 @@
+body {
+  background-image: url("https://wallpapercave.com/wp/wp9764093.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+#first{
+  width:auto;
+  margin-left:40px;
+  margin-top:40px;
+}
+.registration-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  animation: fade-in 1s ease, slide-up 1s ease;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ff4081;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    color: #ff4081;
+  }
+  50% {
+    color: #00bcd4;
+  }
+  100% {
+    color: #ff4081;
+  }
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  color: #00bcd4;
+}
+
+input.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ff4081;
+  border-radius: 5px;
+  color: #333333;
+  background-color: #ffffff;
+  transition: box-shadow 0.3s ease;
+}
+
+input.form-control:focus {
+  box-shadow: 0 0 5px #ff4081;
+}
+
+.invalid-feedback {
+  color: red;
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+button.btn-primary {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00bcd4;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+button.btn-primary:hover {
+  background-color: #ff4081;
+}
+
+.alert.alert-danger {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff3e0;
+  color: #ff4081;
+  border: 1px solid #ff4081;
+  border-radius: 5px;
+  animation: pulse 1s infinite;
+}

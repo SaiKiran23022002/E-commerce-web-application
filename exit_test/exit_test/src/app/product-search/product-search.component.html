@@ -1,0 +1,44 @@
+<h2>Product Search</h2>
+
+<div>
+  <div>
+    <label for="nameInput">Name:</label>
+    <input type="text" id="nameInput" [(ngModel)]="nameSearchText" [disabled]="!searchOptions.name">
+  </div>
+
+  <div>
+    <label for="productCodeInput">Product Code:</label>
+    <input type="text" id="productCodeInput" [(ngModel)]="productCodeSearchText" [disabled]="!searchOptions.productCode">
+  </div>
+
+  <div>
+    <label for="brandInput">Brand:</label>
+    <input type="text" id="brandInput" [(ngModel)]="brandSearchText" [disabled]="!searchOptions.brand">
+  </div>
+
+  <div>
+    <label for="nameCheckbox">Name</label>
+    <input type="checkbox" id="nameCheckbox" [(ngModel)]="searchOptions.name">
+  </div>
+
+  <div>
+    <label for="productCodeCheckbox">Product Code</label>
+    <input type="checkbox" id="productCodeCheckbox" [(ngModel)]="searchOptions.productCode">
+  </div>
+
+  <div>
+    <label for="brandCheckbox">Brand</label>
+    <input type="checkbox" id="brandCheckbox" [(ngModel)]="searchOptions.brand">
+  </div>
+
+  <button (click)="search()">Submit</button>
+</div>
+
+<div *ngIf="searchResults">
+  <h3>Search Results:</h3>
+  <ul>
+    <li *ngFor="let product of searchResults">
+      {{ product.name }} - {{ product.brand }} - {{ product.productcode }}
+    </li>
+  </ul>
+</div>

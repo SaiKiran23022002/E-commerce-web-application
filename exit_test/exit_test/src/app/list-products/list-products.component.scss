@@ -1,0 +1,243 @@
+body {
+    background-image: url("https://th.bing.com/th/id/R.1a75ab9b423deb3dc7b9edbff70bf012?rik=2LyRvVu1ThSyVA&riu=http%3a%2f%2f3.bp.blogspot.com%2f-XZauq1eTP-A%2fVCLUowF7ZVI%2fAAAAAAAABl8%2fFWkzpBOcW9s%2fs1600%2fplain-wallpaper-blue-703296.jpg&ehk=F3pFlQNRp5Uw83g2DchRElRILcAzy8DhCKlQ9wZ5ooU%3d&risl=&pid=ImgRaw&r=0");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 790px;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #4d4b4b;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 0;
+  color: #fbf8f8;
+  box-shadow: #777777;
+}
+
+.search-bar-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.search-bar-item1 {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  animation: slideRight 0.5s ease-in-out;
+}
+
+.search-bar-item1 label {
+  margin-right: 5px;
+  color: #faf7f8;
+  font-weight: bolder;
+  font-size: medium;
+}
+
+.search-bar-item1 input[type="checkbox"] {
+  margin-right: 5px;
+  font-size: medium;
+}
+
+.search-bar-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar-item2 {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  animation: slideLeft 0.5s ease-in-out;
+
+}
+
+.search-bar-item2 label {
+  margin-right: 5px;
+  color: #eae6e6;
+  font-weight: bolder;
+  font-size: medium;
+}
+
+.search-bar-item2 input[type="text"],
+.search-bar-item2 input[type="number"] {
+  margin-right: 5px;
+  padding: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: medium;
+  color: black;
+  font-weight: bolder;
+
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: #00bcd4;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+.search-button:hover {
+  background-color: #ff4081;
+
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.btn-danger {
+  padding: 10px 20px;
+  background-color: #ff4081;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+.btn-danger:hover {
+  background-color: #00bcd4;
+}
+
+.d-flex.justify-content-middle {
+  display: flex;
+  justify-content: center;
+}
+
+.card-container {
+  width: 1000px;
+  background-color: #efe9e9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  
+}
+
+.card-table {
+  width: 100%; 
+  max-width: 1000px; 
+  padding: 20px;
+}
+
+
+.card-image-column {
+  width: 20%;
+  padding-bottom:70px;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+.card-details-column {
+  width: 80%;
+  padding-left: 300px;
+  padding-bottom: 70px;
+}
+
+
+.card-details {
+  font-size:18px;
+  padding-left: 20px;
+}
+
+
+.card-header {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+
+.card-title {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+
+.card-body {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+
+.card-body p strong {
+  font-weight: bolder;
+}
+
+.btn-info {
+  padding: 5px 10px;
+  background-color: #00bcd4;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  animation: scaleUp 0.3s ease-in-out;
+  font-size: large;
+}
+
+.btn-info:hover {
+  background-color: #ff4081;
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

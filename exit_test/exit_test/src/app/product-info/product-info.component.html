@@ -1,0 +1,53 @@
+<body><br><br>
+<div class="d-flex justify-content-end">
+  <button type="submit" routerLink="/list-product" class="btn btn-primary" id="first">Back</button>
+</div>
+<div class="container">
+  <div class="card-container">
+    <div class="card" *ngFor="let item of infoCollection">
+      <div class="card-image">
+        <img [src]="item.image">
+      </div>
+      <div class="card-details">
+        <div class="card-header">
+          <h5 class="card-title">Product Code: {{item.productcode}}</h5>
+        </div>
+        <div class="card-body">
+          <p><strong>Name:</strong> {{item.name}}</p>
+          <p><strong>Brand:</strong> {{item.brand}}</p>
+          <p><strong>Version:</strong> {{item.version}}</p>
+          <p><strong>Description:</strong> {{item.description}}</p>
+          <p><strong>Price:</strong>Rs {{item.price}}</p>
+        </div>
+        <div>
+          <p>Check Serviceability</p>
+          <form>
+            <input type="number" name="pincode" class="pincode" [(ngModel)]="pincode">
+            <button class="btn btn-info" (click)="checkServiceability(item.productcode)">check</button>
+          </form>
+          <div *ngIf="service">
+
+            <ng-container *ngIf="service.servicable === true">
+              <h1>
+                <p>Hurray! Product will be delivered to your location in {{service.deliverytime}}.</p>
+              </h1>
+            </ng-container>
+            <ng-container *ngIf="service.servicable === false">
+              <h1>
+                <p>Product cannot be delivered to your location. Please forgive us for the inconvience.</p>
+              </h1>
+            </ng-container>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="side-content">
+  <div class="imgside">
+    <img *ngFor="let item of infoCollection" [src]="item.image">
+  </div>
+</div>
+</div>
+</body>
